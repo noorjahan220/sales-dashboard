@@ -1,34 +1,30 @@
-📊 Sales Dashboard
+# 📊 Sales Dashboard
+
 A responsive React application for visualizing sales performance and transaction history, powered by a custom cursor-based API.
 
-🚀 Key Features
-Secure API Integration: Automatically handles authentication via POST /getAuthorize and injects tokens into headers for secure data access.
-Advanced Filtering: dynamically reloads data based on Date Range, Minimum Price, Customer Email, and Phone Number.
-Revenue Visualization: Features a professional Gradient Area Chart (Recharts) that adapts smoothness and line thickness for mobile devices.
-Sales Data Grid:
-Displays detailed transaction info with 50 items per page.
-Includes interactive Sorting (Asc/Desc) for Date and Price columns.
-Smart Pagination:
-Uses API before/after cursor tokens.
-Implements a custom History Stack to ensure the "Previous" button works reliably even when the API logic falls short.
-🛠️ Tech Stack
-React.js & Tailwind CSS
-TanStack Query (State Management & Caching)
-Axios (API Requests)
-Recharts (Data Visualization)
-📡 API Endpoints
-POST /getAuthorize: Fetches the session token.
-GET /sales: Loads filtered sales data using query parameters (startDate, priceMin, email, etc.) and pagination cursors.
+## 🚀 Key Features
 
+- **Secure API Integration:** Automatically handles authentication via `POST /getAuthorize` and injects tokens into headers for secure data access.
+- **Advanced Filtering:** Dynamically reloads data based on Date Range, Minimum Price, Customer Email, and Phone Number.
+- **Revenue Visualization:** Features a professional Gradient Area Chart (Recharts) that adapts smoothness and line thickness for mobile devices.
+- **Sales Data Grid:**
+  - Displays detailed transaction info with **50 items per page**.
+  - Includes interactive **Sorting (Asc/Desc)** for Date and Price columns.
+- **Smart Pagination:**
+  - Uses API `before`/`after` cursor tokens.
+  - Implements a custom **History Stack** to ensure the "Previous" button works reliably even when the API logic falls short.
 
+## 🛠️ Tech Stack
 
+- **React.js** & **Tailwind CSS**
+- **TanStack Query** (State Management & Caching)
+- **Axios** (API Requests)
+- **Recharts** (Data Visualization)
 
+## 📡 API Endpoints
 
-
-
-
-
-
+1. **`POST /getAuthorize`**: Fetches the session token.
+2. **`GET /sales`**: Loads filtered sales data using query parameters (`startDate`, `priceMin`, `email`, etc.) and pagination cursors.
 
 # React + Vite
 
